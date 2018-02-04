@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tejas.finalyyear.MainActivity">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TL"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp"
+        android:hint="Enter your USN/ID"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TL"
+        android:layout_alignParentStart="true"
+        android:hint="Enter Yor Password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/TL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="102dp"
+        android:text="Teacher\nLogin" />
+
+    <Button
+        android:id="@+id/SL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TL"
+        android:layout_alignBottom="@+id/TL"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/TL"
+        android:text="Student\nlogin" />
+
+</RelativeLayout>
